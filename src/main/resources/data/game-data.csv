@@ -1,0 +1,21 @@
+id,year,split,week,day,isPlayoffs,team1,team2,top1,jungle1,mid1,bot1,support1,top2,jungle2,mid2,bot2,support2,winner,blueside,redside,mvp
+1,2022,Spring,1,1,0,TeamSolo Mid,Evil Geniuses,Huni,Spica,Keaiduo,Tactical,Shenyi,Impact,Inspired,Jojopyun,Danny,Vulcan,Evil Geniuses,Evil Geniuses,TeamSolo Mid,Danny
+2,2022,Spring,1,1,0,FlyQuest,Counter Logic Gaming,Kumo,Josedeodo,Toucouille,Johnsun,Aphromoo,Jenkins,Contractz,Palafox,Luger,Poome,FlyQuest,Counter Logic Gaming,FlyQuest,Toucouille
+3,2022,Spring,1,1,0,Team Liquid,100 Thieves,Bwipo,Santorin,Bjergsen,Hans Sama,Eyla,Ssumday,Closer,Abbedagge,FBI,Huhi,100 Thieves,Team Liquid,100 Thieves,FBI
+4,2022,Spring,1,1,0,Golden Guardians,Cloud9,Licorice,Pridestalker,Ablazeolive,Lost,Olleh,Summit,Blaber,Fudge,Berserker,Winsome,Cloud9,Golden Guardians,Cloud9,Blaber
+5,2022,Spring,1,1,0,Immortals,Dignitas QNTMPAY ,Revenge,Xerxe,PowerOfEvil,Wildturtle,Destiny,Fakegod,River,Blue,Neo,Biofrost,Dignitas QNTMPAY,Dignitas QNTMPAY,Immortals,River
+6,2022,Spring,1,2,0,Counter Logic Gaming,100 Thieves,Jenkins,Contractz,Palafox,Luger,Poome,Ssumday,Closer,Abbedagge,FBI,Huhi,100 Thieves,100 Thieves,Counter Logic Gaming,Closer
+7,2022,Spring,1,2,0,TeamSolo Mid,Dignitas QNTMPAY ,Huni,Spica,Keaiduo,Tactical,Shenyi,Fakegod,River,Blue,Neo,Biofrost,Dignitas QNTMPAY,TeamSolo Mid,Dignitas QNTMPAY,Biofrost
+8,2022,Spring,1,2,0,Evil Geniuses,Cloud9,Impact,Inspired,Jojopyun,Danny,Vulcan,Summit,Blaber,Fudge,Berserker,Winsome,Cloud9,Cloud9,Evil Geniuses,Berserker
+9,2022,Spring,1,2,0,Golden Guardians,FlyQuest,Licorice,Pridestalker,Ablazeolive,Lost,Olleh,Kumo,Josedeodo,Toucouille,Johnsun,Aphromoo,FlyQuest,FlyQuest,Golden Guardians,Josedeodo
+10,2022,Spring,1,2,0,Immortals,Team Liquid,Revenge,Xerxe,PowerOfEvil,Wildturtle,Destiny,Bwipo,Santorin,Bjergsen,Hans Sama,Eyla,Team Liquid,Immortals,Team Liquid,Santorin
+11,2022,Spring,2,1,0,Evil Geniuses,Dignitas QNTMPAY ,Impact,Inspired,Jojopyun,Danny,Vulcan,Fakegod,River,Blue,Neo,Biofrost,Evil Geniuses,Dignitas QNTMPAY,Evil Geniuses,Jojopyun
+12,2022,Spring,2,1,0,Immortals,100 Thieves,Revenge,Xerxe,PowerOfEvil,Wildturtle,Destiny,Ssumday,Closer,Abbedagge,FBI,Huhi,Immortals,100 Thieves,Immortals,Wildturtle
+13,2022,Spring,2,1,0,Team Liquid,Cloud9,Bwipo,Santorin,Bjergsen,Hans Sama,Eyla,Summit,Blaber,Fudge,Berserker,Winsome,Team Liquid,Team Liquid,Cloud9,Hans Sama
+14,2022,Spring,2,1,0,Golden Guardians,Counter Logic Gaming,Licorice,Pridestalker,Ablazeolive,Lost,Olleh,Jenkins,Contractz,Palafox,Luger,Poome,Golden Guardians,Golden Guardians,Counter Logic Gaming,Lost
+15,2022,Spring,2,1,0,TeamSolo Mid,FlyQuest,Huni,Spica,Keaiduo,Tactical,Shenyi,Kumo,Josedeodo,Toucouille,Johnsun,Aphromoo,FlyQuest,TeamSolo Mid,FlyQuest,Toucouille
+16,2022,Spring,2,2,0,Immortals,Cloud9,Revenge,Xerxe,PowerOfEvil,Wildturtle,Destiny,Summit,Blaber,Fudge,Berserker,Winsome,Cloud9,Immortals,Cloud9,Berserker
+17,2022,Spring,2,2,0,TeamSolo Mid,Golden Guardians,Huni,Spica,Keaiduo,Tactical,Shenyi,Licorice,Pridestalker,Ablazeolive,Lost,Olleh,Golden Guardians,TeamSolo Mid,Golden Guardians,Pridestalker
+18,2022,Spring,2,2,0,Evil Geniuses,100 Thieves,Impact,Inspired,Jojopyun,Danny,Vulcan,Ssumday,Closer,Abbedagge,FBI,Huhi,100 Thieves,Evil Geniuses,100 Thieves,Ssumday
+19,2022,Spring,2,2,0,Team Liquid,FlyQuest,Bwipo,Santorin,Bjergsen,Hans Sama,Eyla,Kumo,Josedeodo,Toucouille,Johnsun,Aphromoo,Team Liquid,FlyQuest,Team Liquid,Bwipo
+20,2022,Spring,2,2,0,Dignitas QNTMPAY ,Counter Logic Gaming,Fakegod,River,Blue,Neo,Biofrost,Jenkins,Contractz,Palafox,Luger,Poome,Dignitas QNTMPAY,Counter Logic Gaming,Dignitas QNTMPAY,River

@@ -1,9 +1,13 @@
 package com.cbamz.lcsdashboard.domain.team;
 
+import com.cbamz.lcsdashboard.domain.game.Game;
 import lombok.*;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.List;
+
+// This entity represents a single pro player affiliated with the LCS.
 
 @Getter
 @Setter
@@ -32,6 +36,18 @@ public class Player {
     private String role;
 
     private String currentTeam;
+
+    @Transient
+    private List<Game> gamesPlayed;
+
+    public Player(Long id, String fullName, String gamerTag, String birthYear, String role, String currentTeam) {
+        this.id = id;
+        this.fullName = fullName;
+        this.gamerTag = gamerTag;
+        this.birthYear = birthYear;
+        this.role = role;
+        this.currentTeam = currentTeam;
+    }
 
     public Integer getAge() {
         Integer year = Calendar.getInstance().get(Calendar.YEAR);

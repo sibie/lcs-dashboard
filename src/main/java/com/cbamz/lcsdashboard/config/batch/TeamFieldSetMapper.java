@@ -1,10 +1,12 @@
-package com.cbamz.lcsdashboard.config;
+package com.cbamz.lcsdashboard.config.batch;
 
 import com.cbamz.lcsdashboard.domain.team.Team;
 
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.validation.BindException;
+
+// Custom implementation of FieldSetMapper to map csv column inputs to form a new Team object to write into DB.
 
 public class TeamFieldSetMapper implements FieldSetMapper<Team> {
     @Override

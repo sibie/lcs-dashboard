@@ -1,5 +1,7 @@
 package com.cbamz.lcsdashboard.domain.team;
 
+// Not really using this, but keeping it anyway.
+
 public enum PlayerRole {
     TOP("Top"),
     JUNGLE("Jungle"),

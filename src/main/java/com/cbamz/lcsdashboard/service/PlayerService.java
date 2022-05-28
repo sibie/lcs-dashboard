@@ -11,17 +11,8 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class TeamService {
-    private final TeamRepository teamRepository;
+public class PlayerService {
     private final PlayerRepository playerRepository;
-
-    public List<Team> loadAllTeams() {
-        return teamRepository.findAll();
-    }
-
-    public Team loadTeamByTeamName(String teamName) {
-        return teamRepository.findByTeamName(teamName).get();
-    }
 
     public List<Player> loadAllPlayers() {
         return playerRepository.findAll();
@@ -31,6 +22,6 @@ public class TeamService {
         return playerRepository.findByGamerTag(gamerTag).get();
     }
 
-
+    public List<Player> loadPlayersByTeamCode(String teamCode) { return playerRepository.getByCurrentTeam(teamCode); }
 
 }
