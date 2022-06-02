@@ -1,0 +1,36 @@
+.header-section {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.app-name {
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.about {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.team-label {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.TeamTile {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    height: 170px;
+    border: 1px solid white;
+}

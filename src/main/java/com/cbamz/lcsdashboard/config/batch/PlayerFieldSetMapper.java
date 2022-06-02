@@ -16,7 +16,8 @@ public class PlayerFieldSetMapper implements FieldSetMapper<Player> {
                 fieldSet.readString("gamerTag"),
                 fieldSet.readString("birthYear"),
                 fieldSet.readString("role"),
-                fieldSet.readString("currentTeam"));
+                fieldSet.readString("currentTeam"),
+                fieldSet.readString("countryOfBirth"));
 
     }
 }

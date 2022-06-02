@@ -1,0 +1,77 @@
+.TeamPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-spacing: 10px;
+}
+
+.team-name-section {
+    grid-column: span 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.team-name {
+    font-size: 4rem;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.StaffDetails {
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.staff-table {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.staff-role {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.staff-name {
+    border: 1px solid black;
+}
+
+.RosterDetailCard {
+    justify-self: center;
+    align-self: center;
+}
+
+.role-name-section {
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.role-name {
+    font-size: 2rem;
+}
+
+.player-name {
+    font-size: 2rem;
+}
+
+.LatestGameDetails {
+    grid-column: span 5;
+}
+
+.subs-label {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.nav-anchor {
+    margin-top: 30px;
+    font-size: 2rem;
+    justify-self: center;
+    align-self: right;
+}

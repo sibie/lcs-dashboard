@@ -1,0 +1,28 @@
+.GameSmallCard {
+    margin-top: 20px;
+    margin-right:20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    width: 250px;
+    height: 80px;
+}
+
+.win-card {
+    background-color: #4DA375;
+}
+
+.loss-card {
+    background-color: #E15454;
+}
+
+.vs {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.game-result {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}

@@ -1,0 +1,27 @@
+.GamePage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.home-anchor {
+    justify-self: center;
+    align-self: right;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.year-selector {
+    justify-self: center;
+    margin-top: 40px;
+}
+
+.team-match-history-header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filtered-game-list {
+    grid-column: span 4;
+}

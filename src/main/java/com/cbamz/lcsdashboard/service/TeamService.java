@@ -19,8 +19,8 @@ public class TeamService {
         return teamRepository.findAll();
     }
 
-    public Team loadTeamByTeamName(String teamName) {
-        return teamRepository.findByTeamName(teamName).get();
+    public Team loadTeamByTeamCode(String teamCode) {
+        return teamRepository.findByTeamCode(teamCode).get();
     }
 
     public List<Player> loadAllPlayers() {

@@ -36,17 +36,19 @@ public class Player {
     private String role;
 
     private String currentTeam;
+    private String countryOfBirth;
 
     @Transient
     private List<Game> gamesPlayed;
 
-    public Player(Long id, String fullName, String gamerTag, String birthYear, String role, String currentTeam) {
+    public Player(Long id, String fullName, String gamerTag, String birthYear, String role, String currentTeam, String countryOfBirth) {
         this.id = id;
         this.fullName = fullName;
         this.gamerTag = gamerTag;
         this.birthYear = birthYear;
         this.role = role;
         this.currentTeam = currentTeam;
+        this.countryOfBirth = countryOfBirth;
     }
 
     public Integer getAge() {

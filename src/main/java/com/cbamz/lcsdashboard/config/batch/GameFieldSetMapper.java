@@ -31,6 +31,14 @@ public class GameFieldSetMapper implements FieldSetMapper<Game> {
                 fieldSet.readString("winner"),
                 fieldSet.readString("blueside"),
                 fieldSet.readString("redside"),
-                fieldSet.readString("mvp"));
+                fieldSet.readString("mvp"),
+                fieldSet.readString("gameTime"),
+                fieldSet.readString("team1Stats"),
+                fieldSet.readString("team2Stats"),
+                fieldSet.readString("team1Bans"),
+                fieldSet.readString("team2Bans"),
+                fieldSet.readString("team1Picks"),
+                fieldSet.readString("team2Picks"),
+                fieldSet.readString("dragonSoul"));
     }
 }

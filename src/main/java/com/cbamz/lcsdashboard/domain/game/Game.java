@@ -53,12 +53,20 @@ public class Game {
     private String bot2;
     private String support2;
 
-    // Key Match information for styling.
+    // Key Match information.
     private String winner;
     private String blueside;
     private String redside;
     private String mvp;
+    private String gameTime;
 
-    // Will add more fields to hold stats later.
+    // Advanced Stats.
+    private String team1Stats;
+    private String team2Stats;
+    private String team1Bans;
+    private String team2Bans;
+    private String team1Picks;
+    private String team2Picks;
+    private String dragonSoul;
 
 }

@@ -52,7 +52,7 @@ public class BatchConfig {
 
         // Setting column headers to tokenizer so data is mapped correctly for each record.
         DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
-        tokenizer.setNames(new String[]{"id", "fullName", "gamerTag", "birthYear", "role", "currentTeam"});
+        tokenizer.setNames(new String[]{"id", "fullName", "gamerTag", "birthYear", "role", "currentTeam", "countryOfBirth"});
 
         playerLineMapper.setLineTokenizer(tokenizer);
         playerLineMapper.setFieldSetMapper(new PlayerFieldSetMapper());
@@ -88,7 +88,7 @@ public class BatchConfig {
         DefaultLineMapper<Game> gameLineMapper = new DefaultLineMapper<>();
 
         DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
-        tokenizer.setNames(new String[]{"id", "gameYear", "gameSplit", "gameWeek", "gameDay", "isPlayoffs", "team1", "team2", "top1", "jungle1", "mid1", "bot1", "support1", "top2", "jungle2", "mid2", "bot2", "support2", "winner", "blueside", "redside", "mvp"});
+        tokenizer.setNames(new String[]{"id", "gameYear", "gameSplit", "gameWeek", "gameDay", "isPlayoffs", "team1", "team2", "top1", "jungle1", "mid1", "bot1", "support1", "top2", "jungle2", "mid2", "bot2", "support2", "winner", "blueside", "redside", "mvp", "gameTime", "team1Stats", "team2Stats", "team1Bans", "team2Bans", "team1Picks", "team2Picks", "dragonSoul"});
 
         gameLineMapper.setLineTokenizer(tokenizer);
         gameLineMapper.setFieldSetMapper(new GameFieldSetMapper());
@@ -108,7 +108,7 @@ public class BatchConfig {
         JdbcBatchItemWriter<Player> itemWriter = new JdbcBatchItemWriter<>();
 
         itemWriter.setDataSource(this.dataSource);
-        itemWriter.setSql("INSERT INTO PLAYER (id, birth_year, current_team, full_name, gamer_tag, role) VALUES (:id, :birthYear, :currentTeam, :fullName, :gamerTag, :role)");
+        itemWriter.setSql("INSERT INTO PLAYER (id, birth_year, current_team, full_name, gamer_tag, role, country_of_birth) VALUES (:id, :birthYear, :currentTeam, :fullName, :gamerTag, :role, :countryOfBirth)");
         itemWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider());
         itemWriter.afterPropertiesSet();
 
@@ -133,7 +133,7 @@ public class BatchConfig {
         JdbcBatchItemWriter<Game> itemWriter = new JdbcBatchItemWriter<>();
 
         itemWriter.setDataSource(this.dataSource);
-        itemWriter.setSql("INSERT INTO GAME (id, game_year, game_split, game_week, game_day, is_playoffs, team1, team2, top1, jungle1, mid1, bot1, support1, top2, jungle2, mid2, bot2, support2, winner, blueside, redside, mvp) VALUES (:id, :gameYear, :gameSplit, :gameWeek, :gameDay, :isPlayoffs, :team1, :team2, :top1, :jungle1, :mid1, :bot1, :support1, :top2, :jungle2, :mid2, :bot2, :support2, :winner, :blueside, :redside, :mvp)");
+        itemWriter.setSql("INSERT INTO GAME (id, game_year, game_split, game_week, game_day, is_playoffs, team1, team2, top1, jungle1, mid1, bot1, support1, top2, jungle2, mid2, bot2, support2, winner, blueside, redside, mvp, game_time, team1stats, team2stats, team1bans, team2bans, team1picks, team2picks, dragon_soul) VALUES (:id, :gameYear, :gameSplit, :gameWeek, :gameDay, :isPlayoffs, :team1, :team2, :top1, :jungle1, :mid1, :bot1, :support1, :top2, :jungle2, :mid2, :bot2, :support2, :winner, :blueside, :redside, :mvp, :gameTime, :team1Stats, :team2Stats, :team1Bans, :team2Bans, :team1Picks, :team2Picks, :dragonSoul)");
         itemWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider());
         itemWriter.afterPropertiesSet();
 
