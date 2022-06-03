@@ -223,7 +223,7 @@ TBC
 **Improvements to the Raw Data**
 * Since this is a PoC, I opted to limit Game data to the first 20 games of the 2022 Spring Split. This was done to save time since I prepared the CSV files myself.
 * However, a better approach for a production-grade application would be to use the services of an Esports data provider like Oracle's Elixir as they have huge streams of historical data that you can download as excel files from their website. We could convert these into CSVs and enhance the existing entities, mappers and Batch config to capture all this information and make it available as part of API calls. Then we can update our frontend to make this dashboard a truly powerful tool.
-* Alternatively, Riot provides internal API access on a case-by-case basis to individuals/orgs who are looking to build something meaningful around the game. Probably the best direction to take if you want to be noticed by the community. <br />
+* Alternatively, Riot provides internal API access on a case-by-case basis to individuals/orgs who are looking to build something meaningful around the game. Probably the best direction to take if you want product credibility within the community. <br />
 
 **Advanced Player/Team Metrics**
 * Esports analytics has developed a ton throughout the years with its rise in popularity. Instead of simply displaying each bit of data we read from raw source, we could prepare additional meaningful metrics from that data which capture the performance of different teams/players across a game or time period. This information would greatly enhance the value from using this dashboard. 
