@@ -7,7 +7,7 @@
   <h3 align="center">LCS Dashboard</h3>
 
   <p align="center">
-    Esports Dashboard to view team details and game history for the League Championship Series (LCS).
+    Esports Dashboard to view team details and game history for the League Championship Series (LCS).<br />
     Full-stack application built with SpringBoot and React.
     <br />
     <a href="https://github.com/sibie/lcs-dashboard"><strong>Explore the docs »</strong></a>
