@@ -40,6 +40,7 @@
     </li>
     <li><a href="#features">Features</a></li>
     <li><a href="#project-structure">Project Structure</a></li>
+    <li><a href="#api-documentation">API Documentation</a></li>
     <li><a href="#csv-datasource">CSV Datasource</a></li>
     <li><a href="#future-improvements">Future Improvements</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -55,7 +56,7 @@ As a long-time fan, I thought this would be a fun personal project to work on si
 Some features include:
 
   * Parsing of raw data in the form of CSV files and transforming it into structured data to be stored in a SQL DB.
-  * RESTful APIs built developed with SpringBoot which can be used to retrieve data from the DB.
+  * RESTful APIs developed with SpringBoot which can be used to retrieve data from the DB.
   * React frontend for users to browse team data (staff, roster, etc) and check the stats of their latest games.
 
 Aside from the use case itself which interests me, this was a great opportunity to practice full-stack development with separate technology for frontend vs backend.
@@ -212,6 +213,10 @@ Feel free to fork your own branch. :grin: Here are some screenshots of the appli
 
 **Note** - If you browse the code, you'll find that the React app was created in `frontend` directory which is in SpringBoot `src` directory. This is an intentional design decision since I wanted everything to be packaged as a single application.
 
+## API Documentation
+
+TBC
+
 ## CSV Datasource
 
 TBC
@@ -231,7 +236,7 @@ TBC
 * Additionally, it would be a cool feature to create a Comparision page component, that allows you to review 2 or more team/player stats against each other and compare their performances. <br />
 
 **Player/Team Images**
-Goes without saying, but team logos and player images would help improve the browsing experience as well. I toyed with the idea of picking up some images from fandom files and using them (either by URL or saving the image itself as a resource in app), but I was unsure of copyright issues so passed on that. Would be nice to add this in the future. <br />
+Goes without saying, but team logos and player images would help improve the browsing experience as well. I toyed with the idea of picking up some images from fandom files and using them (either by URL or saving the image itself as a resource in app), but I was unsure of copyright issues so passed on that. Would be nice to add this in the future. We could also add some custom stylings for teams/players who have noteworthy achievements that should be highlighted.<br />
 
 **Page and Component Styling**
 If there's ever a point where you feel that you are 100% done with your UI, then your approach is wrong. Developing your UI is a continuous process and you should always be looking for ways to improve the user experience based on feedback. I like the way the styling turned out considering the time I put into it, but the CSS could definitely be tweaked, or even enhanced with Bootstrap. There's a lot of cool resources out there which you can use to create more dynamic tables and pages so that would be an interesting area to research further on.
