@@ -161,7 +161,7 @@ Feel free to fork your own branch. :grin: Here are some screenshots of the appli
 5. For local development of frontend with live dev server, `REACT_APP_API_ROOT_URL` field in React .env file has to be set to `http://localhost:3000`. Then you can use`npm start` and edit the code.
 
 6. In case you want to run frontend and backend together:
-   - Set `REACT_APP_API_ROOT_URL` as `http://localhost:8080` or whatever port you are using for SpringBoot.
+   - Set `REACT_APP_API_ROOT_URL` as blank since you can build the React app into the SpringBoot src directory.
    - Navigate to `src/frontend` in terminal and run the command `npm run-script build` to create React resources in `src/main/resources/public` directory so SpringBoot uses React as the root.
    - If process completed successfully, you should see assets in the public directory. Go ahead and run the SpringBoot application class and you should see the React page at your root URL.
 
