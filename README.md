@@ -60,17 +60,36 @@ Some features include:
 
 Aside from the use case itself which interests me, this was a great opportunity to practice full-stack development with separate technology for frontend vs backend.
 
-Feel free to fork your own branch. :grin: 
+Feel free to fork your own branch. :grin: Here are some screenshots of the application: <br />
+
+**Home Page** <br />
 
 ![Home](images/home-page.PNG)
 
+<br /><br />
+
+**Team Page** <br />
+
 ![Team_Page](images/team-page.PNG)
+
+<br /><br />
+
+**Player Page** <br />
 
 ![Player_Page](images/player-page.PNG)
 
-![Game_Page](images/game-page.PNG)
+<br /><br />
 
+**Game Page** <br />
+
+![Game_Page](images/games-page.PNG)
+
+<br /><br />
+
+**Sample REST API Response** <br />
 ![REST_API_Example](images/rest-api-example.PNG)
+
+<br /><br />
 
 **Note** - In case you're wondering why the roster in Team page doesn't match the players being shown in games, its because player data is up to date taking into account the latest roster moves that happened over the past month. However since I didn't want to spend too much time preparing game data as this is a PoC, I limited it to the first 20 games of the 2022 spring split. Obviously some of those players have swapped teams since then.
 
