@@ -50,7 +50,7 @@
 
 This is an Esports dashboard for the League Championship Series, the top level of professional League of Legends in the US and Canada. The league is run by Riot Games and has ten franchise teams.
 
-As a long-time fan, I thought this would be a fun project to work on since this is still a growing space with a lot of scope to build new utilities/services for the fans.
+As a long-time fan, I thought this would be a fun personal project to work on since this is still a growing space with a lot of scope to build new utilities/services for the fans.
 
 Some features include:
 
@@ -70,24 +70,24 @@ Feel free to fork your own branch. :grin: Here are some screenshots of the appli
 
 **Team Page** <br />
 
-![Team_Page](images/team-page.PNG)
+![Team Page](images/team-page.PNG)
 
 <br /><br />
 
 **Player Page** <br />
 
-![Player_Page](images/player-page.PNG)
+![Player Page](images/player-page.PNG)
 
 <br /><br />
 
 **Game Page** <br />
 
-![Game_Page](images/games-page.PNG)
+![Game Page](images/games-page.PNG)
 
 <br /><br />
 
 **Sample REST API Response** <br />
-![REST_API_Example](images/rest-api-example.PNG)
+![REST API Example](images/rest-api-example.PNG)
 
 <br /><br />
 
@@ -198,9 +198,9 @@ Feel free to fork your own branch. :grin: Here are some screenshots of the appli
 
 ## Project Structure
 
-![Backend_Project Structure](images/backend-project-structure.PNG)
+![Backend Project Structure](images/backend-project-structure.PNG)
 
-![Frontend_Project Structure](images/frontend-project-structure.PNG)
+![Frontend Project Structure](images/frontend-project-structure.PNG)
 
 
 
