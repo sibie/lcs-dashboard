@@ -89,7 +89,7 @@ Feel free to fork your own branch. :grin: Here are some screenshots of the appli
 **Sample REST API Response** <br />
 ![REST API Example](images/rest-api-example.PNG)
 
-<br /><br />
+<br />
 
 **Note** - In case you're wondering why the roster in Team page doesn't match the players being shown in games, its because player data is up to date taking into account the latest roster moves that happened over the past month. However since I didn't want to spend too much time preparing game data as this is a PoC, I limited it to the first 20 games of the 2022 spring split. Obviously some of those players have swapped teams since then.
 
@@ -198,11 +198,19 @@ Feel free to fork your own branch. :grin: Here are some screenshots of the appli
 
 ## Project Structure
 
+**Backend (Java/SpringBoot)** <br />
+
 ![Backend Project Structure](images/backend-project-structure.PNG)
+
+<br /><br />
+
+**Frontend (React)** <br />
 
 ![Frontend Project Structure](images/frontend-project-structure.PNG)
 
+<br />
 
+**Note** - If you browse the code, you'll find that the React app was created in `frontend` directory which is in SpringBoot `src` directory. This is an intentional design decision since I wanted everything to be packaged as a single application.
 
 ## CSV Datasource
 
@@ -212,7 +220,25 @@ TBC
 
 ## Future Improvements
 
-TBC
+**Improvements to the Raw Data**
+* Since this is a PoC, I opted to limit Game data to the first 20 games of the 2022 Spring Split. This was done to save time since I prepared the CSV files myself.
+* However, a better approach for a production-grade application would be to use the services of an Esports data provider like Oracle's Elixir as they have huge streams of historical data that you can download as excel files from their website. We could convert these into CSVs and enhance the existing entities, mappers and Batch config to capture all this information and make it available as part of API calls. Then we can update our frontend to make this dashboard a truly powerful tool.
+* Alternatively, Riot provides access on a case-by-case basis to individuals/orgs who are looking to build something meaningful around the game. Probably the best direction to take if you want to be noticed by the community. <br />
+
+**Advanced Player/Team Metrics**
+* Esports analytics has developed a ton throughout the years with its rise in popularity. Instead of simply displaying each bit of data we read from raw source, we could prepare additional meaningful metrics from that data which capture the performance of different teams/players across a game or time period. This information would greatly enhance the value from using this dashboard. 
+* A custom stat generator tool would be really useful too. Users could create their own metrics from raw data returned from API and then export their findings into a csv/excel file they can download and review later.
+* Additionally, it would be a cool feature to create a Comparision page component, that allows you to review 2 or more team/player stats against each other and compare their performances. <br />
+
+**Player/Team Images**
+Goes without saying, but team logos and player images would help improve the browsing experience as well. I toyed with the idea of picking up some images from fandom files and using them (either by URL or saving the image itself as a resource in app), but I was unsure of copyright issues so passed on that. Would be nice to add this in the future. <br />
+
+**Page and Component Styling**
+If there's ever a point where you feel that you are 100% done with your UI, then your approach is wrong. Developing your UI is a continuous process and you should always be looking for ways to improve the user experience based on feedback. I like the way the styling turned out considering the time I put into it, but the CSS could definitely be tweaked, or even enhanced with Bootstrap. There's a lot of cool resources out there which you can use to create more dynamic tables and pages so that would be an interesting area to research further on.
+
+**Choice of DB / Deployment & Hosting**
+* H2 is never a good idea for production-grade applications. Considering the volume of data we could potentially have, shifting to a more powerful DB like HSQL, PostreSQL or even Mongo could be a better choice. Obviously that would require some changes to our configuration and deployment process. 
+* I also opted for Heroku just because I wanted to get this up on the web at the soonest. But considering the number of users who could be concurrently accessing this, the infra for deployment would need to be re-evaluated. AWS or another premium solution would be better so it is easier to scale as demand for resources increase.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
